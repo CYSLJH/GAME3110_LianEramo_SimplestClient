@@ -14,6 +14,8 @@ public class GameSystemManager : MonoBehaviour
 
     GameObject infoText1, infoText2;
 
+    GameObject ticTacToe;
+
     void Start()
     {
         GameObject[] allObjects = UnityEngine.Object.FindObjectsOfType<GameObject>();
@@ -40,6 +42,8 @@ public class GameSystemManager : MonoBehaviour
                 infoText1 = go;
             else if (go.name == "InfoText2")
                 infoText2 = go;
+            else if (go.name == "TicTacToe")
+                ticTacToe = go;
         }
 
         buttonSubmit.GetComponent<Button>().onClick.AddListener(SubmitButtonPressed);
@@ -120,6 +124,8 @@ public class GameSystemManager : MonoBehaviour
         infoText1.SetActive(false);
         infoText2.SetActive(false);
 
+        ticTacToe.SetActive(false);
+
         if(newState == GameStates.Login)
         {
             inputFieldUserName.SetActive(true);
@@ -141,6 +147,7 @@ public class GameSystemManager : MonoBehaviour
         else if (newState == GameStates.PlayingTicTacToe)
         {
             placeHolderGameButton.SetActive(true);
+            ticTacToe.SetActive(true);
         }
     }
 }
