@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 155690178}
   - component: {fileID: 155690177}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -672,7 +672,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0,1
+  m_Text: 3
 --- !u!222 &167658694
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -769,7 +769,7 @@ GameObject:
   - component: {fileID: 293953769}
   - component: {fileID: 293953768}
   m_Layer: 5
-  m_Name: SaveReplay
+  m_Name: Replay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1014,7 +1014,7 @@ GameObject:
   - component: {fileID: 370273086}
   - component: {fileID: 370273085}
   m_Layer: 5
-  m_Name: Button (5)
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1334,9 +1334,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '0,0
-
-'
+  m_Text: 0
 --- !u!222 &398268814
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1358,7 +1356,7 @@ GameObject:
   - component: {fileID: 439102220}
   - component: {fileID: 439102219}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1479,7 +1477,7 @@ GameObject:
   - component: {fileID: 459673688}
   - component: {fileID: 459673687}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2377,7 +2375,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0,2
+  m_Text: 6
 --- !u!222 &887308498
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2499,9 +2497,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '2,0
-
-'
+  m_Text: 2
 --- !u!222 &1012580804
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2599,7 +2595,7 @@ GameObject:
   - component: {fileID: 1057862553}
   - component: {fileID: 1057862552}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2856,7 +2852,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1,2
+  m_Text: 7
 --- !u!222 &1073144651
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3585,7 +3581,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1,2
+  m_Text: 5
 --- !u!222 &1447422522
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3607,7 +3603,7 @@ GameObject:
   - component: {fileID: 1457795767}
   - component: {fileID: 1457795766}
   m_Layer: 5
-  m_Name: Button (7)
+  m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3728,7 +3724,7 @@ GameObject:
   - component: {fileID: 1465394357}
   - component: {fileID: 1465394356}
   m_Layer: 5
-  m_Name: Button (8)
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3906,7 +3902,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1,0
+  m_Text: 1
 --- !u!222 &1479175884
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3928,7 +3924,7 @@ GameObject:
   - component: {fileID: 1501506320}
   - component: {fileID: 1501506319}
   m_Layer: 5
-  m_Name: Button
+  m_Name: 0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4409,7 +4405,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1,1
+  m_Text: 4
 --- !u!222 &1723716618
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4617,6 +4613,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813683231}
+  - component: {fileID: 1813683232}
   m_Layer: 5
   m_Name: TicTacToe
   m_TagString: Untagged
@@ -4646,6 +4643,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1813683232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813683230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 361c7a169ec0e34478b434b14129b700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonPressed: 000000000000000000
 --- !u!1 &1854670842
 GameObject:
   m_ObjectHideFlags: 0
@@ -4795,7 +4805,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2,2
+  m_Text: 8
 --- !u!222 &1857119364
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5502,7 +5512,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Save Replay
+  m_Text: Replay
 --- !u!222 &2055848626
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5524,7 +5534,7 @@ GameObject:
   - component: {fileID: 2093505991}
   - component: {fileID: 2093505990}
   m_Layer: 5
-  m_Name: Button (6)
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -140,13 +140,9 @@ public class GameSystemManager : MonoBehaviour
         {
             findGameSessionButton.SetActive(true);
         }
-        else if (newState == GameStates.WaitingForMatch)
-        {
-
-        }
         else if (newState == GameStates.PlayingTicTacToe)
         {
-            placeHolderGameButton.SetActive(true);
+            //placeHolderGameButton.SetActive(true);
             ticTacToe.SetActive(true);
         }
     }
