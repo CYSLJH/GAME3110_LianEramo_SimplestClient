@@ -5,11 +5,15 @@ using UnityEngine;
 
 public class TicTacToe : MonoBehaviour
 {
+    GameObject networkedClient;
+
     InputField chatbox;
     Button restartButton, replayButton, leaveButton, sendButton;
     Button button0, button1, button2, button3, button4, button5, button6, button7, button8;
 
     public bool[] buttonPressed = new bool[9];
+
+    bool isPlayerTurn = false;
 
     private void Start()
     {
@@ -22,6 +26,14 @@ public class TicTacToe : MonoBehaviour
 
     private void OnEnable()
     {
+        GameObject[] allObjects = UnityEngine.Object.FindObjectsOfType<GameObject>();
+
+        foreach (GameObject go in allObjects)
+        {
+            if (go.name == "NetworkedClient")
+                networkedClient = go;
+        }
+
         InputField[] allInputfields = UnityEngine.Object.FindObjectsOfType<InputField>();
 
         foreach (InputField Inf in allInputfields)
@@ -76,7 +88,15 @@ public class TicTacToe : MonoBehaviour
 
     private void button0_pressed()
     {
+        //if(buttonPressed[0] || !isPlayerTurn)
+        //{
+        //    return;
+        //}
+        //
         buttonPressed[0] = true;
+        //isPlayerTurn = false;
+
+        networkedClient.GetComponent<NetworkedClient>().SendMessageToHost(ClientToServerSignifiers.TicTacToePlay + ", 0");
     }
 
     private void button1_pressed()
